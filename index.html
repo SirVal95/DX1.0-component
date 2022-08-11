@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Tutorial</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="menubar-holder" onclick="menuhandler()">
+        <div class="menubar">
+
+        </div>
+    </section>
+
+    
+    
+    
+    
+    
+    
+    <section class="working-with-psuedo-element">
+        <h1>Using pseudo elements</h1>
+    </section>
+    <section class="background-changer-app">
+        <div class="bgchanger-app-holder">
+            <div class="leftchild">
+                <!-- method 1 using inline javascript -->
+                <!-- <div class="circles orange" onclick="clickedorange()"></div> -->
+
+                <!-- method 2 -- using function calls -->
+                <!-- <div class="circles orange" onclick="changebgtoorange()"></div>
+                <div class="circles tomato" onclick="changebgtomato()"></div>
+                <div class="circles skyblue" onclick="changebgskyblue()"></div> -->
+
+                    <!-- Using 3 lines of code --- function calls with arguments -->
+                <div class="circles orange" onclick="changebg ('orange')"></div>
+
+                <div class="circles tomato" onclick="changebg ('tomato')"></div>
+
+                <div class="circles skyblue" onclick="changebg ('#2485acee')"></div>
+            </div>
+            <div class="rightchild" id="rightchild"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="working-with-margin">
+        <div class="child1"></div>
+        <div class="child2">
+            <div class="child2-inner"></div>
+        </div>
+    </section>
+
+    <section class="working-with-flexbox-row">
+        <div class="flexchild"></div>
+        <div class="flexchild"></div>
+        <div class="flexchild"></div>
+    </section>
+    <section class="working-with-flexbox-column">
+        <div class="flexchild"></div>
+        <div class="flexchild"></div>
+        <div class="flexchild"></div>
+    </section>
+
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
